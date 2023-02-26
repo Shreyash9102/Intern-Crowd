@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      
+      #branding {
+        float: left;
+      }
+      
+      #branding h1 {
+        margin: 0;
+      }
+      
+      #branding h1 span {
+        color: #ffcb05;
+      }
+      
+      nav {
+        float: right;
+      }
+      
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      nav li {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav a:hover {
+        background-color: #ffcb05;
+      }
+      
+      #showcase {
+        
+        background-color: #333;
+        background-image:url('Main-Images.png');
+        background-repeat: no-repeat;
+        background-position: 0%;
+        background-position-x: right;
+        color: #fff;
+        padding: 250px 0;
+        text-align: center;
+      }
+      
+      #showcase h1 {
+        margin-bottom: 50px;
+        font-size: 50px;
+      }
+    
+      .container2{
+        margin-left: 10%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        width: 85%;
+    }
+    h2{
+        text-align: center;
+        font-family: cursive;
+        font-size: x-large;
+        margin: 50px;
+    }
+    .box{
+        height: 400px;
+        width: 300px;
+        margin: 2%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(235, 235, 212);
+    }
+    .box img{
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+    .box p{
+        padding: 15px;
+        font-family: cursive;
+        font-size: large;
+        font-weight: 200;
+    }
+    .box h3{
+        font-family: cursive;
+        padding-top: 15px;
+        font-size: x-large;
+    }
+    
+    .box:hover{
+        background-color: rgb(60, 118, 194);
+        box-shadow: inset;
+        cursor: pointer;
+        box-shadow: 7px 7px 5px rgb(59, 87, 137);
+        box-decoration-break: clone;
+    }
+      
+      #about {
+        padding: 100px 0;
+        text-align: center;
+      }
+      
+      #about h2 {
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+      
+      #services {
+        padding: 100px 0;
+        text-align: center;
+      }
+      
+      #services h2 {
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+      
+      #services ul {
+        margin-top: 50px;
+        display: inline-block;
+        text-align: left;
+      }
+      
+      #companies {
+        padding: 100px 0;
+        text-align: center;
+      }
+      
+      #companies h2 {
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+      
+      #companies ul {
+        margin-top: 50px;
+        display: inline-block;
+        text-align: left;
+      }
+      
+      #students {
+        padding: 100px 0;
+        text-align: center;
+      }
+      
+      #students h2 {
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+    
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+      }
+      
+      footer h3 {
+        margin: 0;
+        color: #ffcb05;
+        font-size: 20px;
+      }
+      
+      footer ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      footer li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      footer .quick-links {
+        float: left;
+        width: 40%;
+      }
+      
+      footer .social-media {
+        float: right;
+        width: 40%;
+        text-align: right;
+      }
+      
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        color: #ffcb05;
+      }
+      
+      footer i {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .btn-group .button {
+              background-color: #d1d1d1; /* Green */
+              border: none;
+              color: rgb(150, 140, 140);
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+              float: left;
+            }
+            
+            .btn-group .button:hover {
+              background-color: #2d2b2b;
+            }
+            
+            .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta charset="UTF-8">
+    <title >Intern Crowd</title>
+    
+  </head>
+  
+  <body>
+    <header>
+      <div class="container; btn-group">
+        <div id="branding">
+          <h1 style="font-family:Gentona"><span class="highlight">Intern Crowd</span></h1>
+        </div>
+        <nav>
+          <ul>
+
+            <button class="button">Home</button>
+            <button class="button" >Internship</button>
+            <button class="button">About</button>
+            <button class="button">Contact</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+   
+    <section id="showcase">
+      <div class="container">
+        <h1>Connecting Students with Internship Opportunities</h1>
+        <p>InternCrowd is a platform connecting students with relevant internship opportunities. We strive to provide students with valuable real-world experience and help companies find talented interns.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p>InternCrowd provides a range of services to help students find the right internship and make the most of their experience. Our services include:</p>
+       
+       
+        <div class="container2">
+            
+            <div class="box box1">
+                <img src="WD.jpg">
+                <h3>Web Development</h3>
+                <p>Website needs to work across all devices and it needs to be fast as possible.</p>
+            </div>
+            <div class="box box2">
+                <img src="JD.jpg">
+                <h3>Java Development</h3>
+                <p>It includes owning a particular application or working on several at one time.</p>
+            </div>
+            <div class="box box3">
+                <img src="AD.jpg">
+                <h3>Android Development</h3>
+                <p>It is created for making devices running the operating systems of Android.</p>
+            </div>
+            <div class="box box4">
+                <img src="DM.jpg">
+                <h3>Digital Marketing</h3>
+                <p>It is the marketing and advertising of a business, product, or service using social media.</p>
+            </div>
+            <div class="box box5">
+                <img src="cc++.png">
+                <h3>C/C++</h3>
+                <p>It is a general-purpose programming and coding language.</p>
+            </div>
+            <div class="box box6">
+                <img src="CC.jpg">
+                <h3>Cloud Computing</h3>
+                <p>It is the delivery of distinct services over the Internet.</p>
+            </div>
+        </div>
+
+
+
+      </div>
+    </section>
+    <section id="about">
+        <div class="container">
+          <h2>About InternCrowd</h2>
+          <p>Intern Crowd Is An Online Coding Platform that Offers Specially Programming Courses For Students. <br>You've Probably Heard About How Programming Shines With New Technology. <br>We Have To Be Aware Of How Programming Can Initiate New Innovations. What's A Better Approach For Our Students Is To Grasp And Adapt To The Technology Around Them.</p>
+        </div>
+      </section>
+    <section id="companies">
+      <div class="container">
+        <h2>Partner Companies</h2>
+        <p>InternCrowd partners with a variety of companies in different industries to provide students with a range of internship opportunities. Some of our partner companies include:</p>
+        <ul>
+          <li>Apple</li>
+          <li>Google</li>
+          <li>Microsoft</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+    </section>
+    <section id="students">
+      <div class="container">
+        <h2>Join Our Community of Students</h2>
+
+        <footer>
+            <div><a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </footer>
